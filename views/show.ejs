@@ -1,0 +1,12 @@
+<h1>
+    Movie Data for <%= detailValues[0] %> 
+</h1>
+
+<ul style="list-style-type:none">
+    <% detailKeys.forEach((item,index)=>{%> 
+        <li>       
+            <b><%= item %>:</b> <%= detailValues[index] %> 
+        </li>
+    <% }) %> 
+</ul>
+

@@ -1,5 +1,6 @@
+<h1>Search Results: </h1>
 <ol>
-    <% movieData.forEach(movie=>{ %> 
-        <li><%= movie.Title %></li>
+    <% searchResults.forEach(movie=>{ %> 
+        <li><a href="/movies/<%= movie.imdbID %>" method="GET" > <%= movie.Title %> </a></li>
     <% }) %> 
 </ol>
